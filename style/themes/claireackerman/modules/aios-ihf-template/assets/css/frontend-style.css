@@ -1,0 +1,33 @@
+.aios-ihf-template-notice {
+    position: fixed;
+    z-index: 9999;
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+
+.aios-ihf-template-notice:before,
+.aios-ihf-template-notice:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.aios-ihf-template-notice p {
+    margin: 0 !important;
+}
+
+.aios-ihf-template-notice a {
+    text-decoration: underline !important;
+    color: inherit;
+}
+
+body.admin-bar .aios-ihf-template-notice {
+    display: block;
+}

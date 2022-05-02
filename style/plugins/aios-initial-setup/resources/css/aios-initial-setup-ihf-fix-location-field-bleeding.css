@@ -1,0 +1,10 @@
+#ihf-main-search-form #areaPickerContainer div#areaPickerInputWrapper {
+	height:auto;
+	float: none;
+}
+
+#ihf-main-search-form #areaPickerContainer div#areaPickerInputWrapper .input-text, 
+#ihf-main-search-form #areaPickerContainer div#areaPickerInputWrapper input[type=text], 
+#ihf-main-search-form #areaPickerContainer div#areaPickerInputWrapper input[type=input] {
+	padding-top:7px !important;
+}

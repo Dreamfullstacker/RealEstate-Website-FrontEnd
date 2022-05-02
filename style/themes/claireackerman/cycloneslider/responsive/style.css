@@ -1,0 +1,243 @@
+/*** Template Standard ***/
+.cycloneslider-template-responsive-img{
+	display: block;
+	position: relative;
+	max-width: 100% !important;
+	width: 100%;
+	z-index: 1;
+}
+.cycloneslider-template-responsive-img:focus,
+.cycloneslider-template-responsive-img *:focus{
+	outline: 0 !important;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slides{
+	display: block;
+	position:absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: auto !important;
+	overflow:hidden;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide{
+	text-align: center;
+	width: 100%; /* For slides in scrollHorz to work */
+	display: none; /* Hide slides to prevent FOUC when JS hasn't kicked in yet */
+	background: #fff; /* Add background to prevent slides from peeking behind the current slide when fx=scrollHorz and hideNonActive=false */
+}
+.cycloneslider-template-responsive-img .cycle-slide{
+	display: block !important; /* Show slide so that getBoundingClientRect().height will not return 0. Class .cycle-slide is added when cycle has initialized. */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.cycloneslider-template-responsive-img div[data-cycle-hide-non-active="false"] .cycloneslider-slide{
+	opacity: 0; /* Avoid youtube and vimeo or other slides from peeking behind the current slide whe in transit */
+}
+.cycloneslider-template-responsive-img div[data-cycle-dynamic-height="off"] .cycloneslider-slide-image{
+	height: 100%; /* To prevent cutting off captions when dynamic height is off */
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide:first-child, /* Show first slide */
+.cycloneslider-template-responsive-img .cycle-sentinel + .cycloneslider-slide{ /* Select next slide when using sentinel slide */
+	display: block;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide img{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+.cycloneslider-template-responsive-img.cycloneslider-width-full .cycloneslider-slide img{
+	width:100%;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide iframe, /* Make our videos fluid */
+.cycloneslider-template-responsive-img .cycloneslider-slide object,
+.cycloneslider-template-responsive-img .cycloneslider-slide embed {
+	position: absolute;
+	left: 0;
+	top: 0;
+    width: 100% !important; /* Override width attrib */
+    height: 100% !important; /* Override height attrib */
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-youtube,
+.cycloneslider-template-responsive-img .cycloneslider-slide-vimeo{
+	background: #000;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-custom,
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial{
+	min-height: 100%;
+}
+.cycloneslider-template-responsive-img div[data-cycle-dynamic-height="on"] .cycloneslider-slide-custom,
+.cycloneslider-template-responsive-img div[data-cycle-dynamic-height="on"] .cycle-sentinel + .cycloneslider-slide-testimonial{
+	min-height: 100px; /* Disable 100% min height when dynamic height is on. To fix issue with scrollHorz */
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial{
+	font-style: italic;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial blockquote{
+	margin-bottom: 0;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial p{
+	margin: 0;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial .cycloneslider-testimonial-author{
+	text-align: right;
+	font-style: normal;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-slide-testimonial .cycloneslider-testimonial-author{
+	text-align: left;
+}
+.cycloneslider-template-responsive-img .cycloneslider-slide-testimonial .cycloneslider-testimonial-author a{
+	text-decoration: none;
+}
+
+/*** Prev/Next ***/
+.cycloneslider-template-responsive-img .cycloneslider-prev,
+.cycloneslider-template-responsive-img .cycloneslider-next,
+.cycloneslider-template-responsive-img .cycloneslider-pager span {
+	cursor:pointer;
+}
+.cycloneslider-template-responsive-img .cycloneslider-prev,
+.cycloneslider-template-responsive-img .cycloneslider-next{
+    position:absolute;
+    top:50%;
+    z-index:501;
+	display: block;
+    margin-top:-12px;
+    width:24px;
+    height:24px;
+    border-radius: 40px;
+    background: #fefefe;
+	opacity: 0;
+	-webkit-transition: all 0.5s ;
+	-moz-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
+	transition: all 0.5s ;
+	-webkit-box-shadow: 1px 1px 2px 0px #333333;
+    box-shadow: 1px 1px 2px 0px #333333;
+}
+
+.cycloneslider-template-responsive-img:hover .cycloneslider-prev,
+.cycloneslider-template-responsive-img:hover .cycloneslider-next{
+	opacity: 0.4;
+}
+.cycloneslider-template-responsive-img .cycloneslider-prev:hover,
+.cycloneslider-template-responsive-img .cycloneslider-next:hover{
+	opacity: 1;
+}
+.cycloneslider-template-responsive-img .cycloneslider-prev.disabled,
+.cycloneslider-template-responsive-img .cycloneslider-next.disabled{
+	display: none;
+}
+.cycloneslider-template-responsive-img .arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    width: 0;
+    height: 0;
+}
+.cycloneslider-template-responsive-img .cycloneslider-prev{
+    left:10px;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-prev{
+    left:auto;
+	right:10px;
+}
+.cycloneslider-template-responsive-img .cycloneslider-prev .arrow{
+    margin-left: -4px;
+	border-top: 6px solid transparent;
+	border-right: 6px solid #333;
+	border-bottom: 6px solid transparent;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-prev .arrow{
+    margin-left: -2px;
+	border: 0;
+	border-top: 6px solid transparent;
+	border-left: 6px solid #333;
+	border-bottom: 6px solid transparent;
+}
+.cycloneslider-template-responsive-img .cycloneslider-next{
+    right:10px;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-next{
+    right:auto;
+	left:10px;
+}
+.cycloneslider-template-responsive-img .cycloneslider-next .arrow{
+    margin-left: -2px;
+	border-top: 6px solid transparent;
+	border-left: 6px solid #333;
+	border-bottom: 6px solid transparent;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-next .arrow{
+    margin-left: -4px;
+	border: 0;
+	border-top: 6px solid transparent;
+	border-right: 6px solid #333;
+	border-bottom: 6px solid transparent;
+}
+
+/*** Pager ***/
+.cycloneslider-template-responsive-img .cycloneslider-pager{
+    position:absolute;
+    bottom:-22px;
+    left:0;
+    z-index:100;
+    width: 100%;
+    height: 12px;
+    text-align: center;
+}
+.cycloneslider-template-responsive-img .cycloneslider-pager span {
+    display: inline-block;
+    margin: 0 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #333;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+	-webkit-box-shadow: 1px 1px 2px 0px #333333;
+    box-shadow: 1px 1px 2px 0px #333333;
+}
+.ie7 .cycloneslider-template-responsive-img .cycloneslider-pager span{
+	zoom: 1;/* IE 7 inline-block */
+	*display: inline;/* IE 7 inline-block */
+}
+.cycloneslider-template-responsive-img .cycloneslider-pager span.cycle-pager-active {
+    background-color: #ccc;
+}
+
+/*** Caption ***/
+.cycloneslider-template-responsive-img .cycloneslider-caption{
+    position:absolute;
+    top: 50%;
+		transform: translate(0,-50%);
+    left:0;
+    z-index:500;
+    width:100%;
+    color:#fff;
+    opacity: 1;
+		text-align: left;
+}
+.rtl .cycloneslider-template-responsive-img .cycloneslider-caption{
+	text-align: right;
+}
+.cycloneslider-template-responsive-img .cycloneslider-caption-title{
+    margin-bottom:0;
+    padding:10px 20px 5px 20px;
+    font-size:22px;
+    line-height:1;
+}
+.cycloneslider-template-responsive-img .cycloneslider-caption-description{
+    padding:0 20px 15px 20px;
+    font-size:12px;
+    line-height:1.5;
+}

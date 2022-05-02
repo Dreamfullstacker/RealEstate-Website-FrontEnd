@@ -1,0 +1,506 @@
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+ @media only screen and (max-height: 700px) {
+	.floating-section-nav,
+	.floating-social-media-icons{
+		top: 40%;
+	}
+} 
+ 
+/* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
+@media only screen and (max-width: 1560px) {
+	.max-container {
+    width: 1250px;
+	}
+	button.slide-menu-close{
+		right: 0;
+	}
+	
+	.header-affiliate-logo img {
+    max-width: 180px;
+	}
+} 
+@media only screen and (max-width: 1500px) {
+	.site-header.change-header .site-logo img {
+    margin-left: 0;
+	}
+	#nav > li {
+    padding: 0 12px;
+	}
+	.header-contact .contact-col:last-of-type {
+    padding-right: 10px;
+	}
+
+}
+@media only screen and (max-width: 1400px) {
+	.header-contact .contact-col:last-of-type {
+    padding-right: 8px;
+	}
+	.site-logo img {
+    max-height: 100px;
+	}
+	p {
+    line-height: 1.54;
+	}
+	.about-text-content {
+    padding-left: 0;
+	}
+	.section-title {
+    font-size: 50px;
+	}
+	.header-affiliate-logo img {
+    max-width: 170px;
+	}
+	#nav > li {
+    padding: 0 10px;
+	}
+	.max-container,
+	.container {
+    width: 1080px;
+	}
+	.site-header {
+    padding: 30px 15px;
+	}
+	.site-header.change-header {
+    padding: 10px 15px;
+	}
+	.floating-section-nav{
+		left: 10px;
+	}
+	.floating-social-media-icons{
+		right: 10px;
+	}
+	.qs-container {
+    padding: 0;
+	}
+	.qs-row{
+		padding: 40px;
+	}
+	.cta-button-box {
+    margin-left: -45px;
+	}
+	.testi-slider-wrapper {
+    margin-left: -120px;
+    margin-right: 55px;
+    padding: 60px 52px 33px;
+	}
+	.fp-address-1,
+	.fp-price {
+    font-size: 20px;
+	}
+	.fp-more-informations {
+    margin: 0 -10px;
+	}
+	.fp-more-informations span {
+    font-size: 11px;
+		padding: 0 10px;
+	}
+	.fp-info-left {
+    padding-left: 15px;
+	}
+	.fp-info-row {
+    padding: 30px 20px;
+	}
+	ul#slide_out_nav > li > a {
+    font-size: 35px;
+	}
+	.slide-out-contact-row {
+    margin-right: 30px;
+	}
+	
+	.nav-and-contact nav.navigation {
+    padding: 8px 0;
+	}
+} 
+@media only screen and (max-width: 1354px) {
+	.site-logo img {
+    max-height: 87px;
+	}
+	.header-affiliate-logo img {
+    max-width: 160px;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	#nav a {
+    font-size: 12px;
+	}
+	.header-affiliate-logo img {
+    max-width: 140px;
+	}
+
+	.feed-section-title .feed-title {
+		font-size: 27px;
+	}
+	.feed-section-title .follow-text {
+    font-size: 16.5px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.header-contact .contact-col:last-of-type {
+    padding-right: 8px;
+	}
+	.max-container,
+	.container {
+    width: 970px;
+	}
+	.header-affiliate-logo img {
+    max-width: 130px;
+	}
+	#nav > li {
+    padding: 0 6px;
+	}
+	#nav a {
+    font-size: 11px;
+	}
+	.nav-and-contact {
+    padding: 0 5px;
+    width: 104%;
+	}
+	.fp-address-2 {
+    font-size: 13px;
+	}
+	.fp-info-left {
+    padding-left: 5px;
+    padding-right: 5px;
+	}
+	.fp-info-row::before {
+    left: 10px;
+    width: 3px;
+    height: 156px;
+	}
+	.fp-address-1, .fp-price {
+    font-size: 16px;
+	}
+	.lgs-content-wrapper {
+    padding: 75px 60px;
+	}
+	.member-name {
+    font-size: 20px;
+	}
+	.member-position{
+		font-size: 13px;
+	}
+	.member-contact a {
+    	font-size: 9px;
+	}
+	.about-image {
+    padding-left: 0;
+	}
+	.about-text-content{
+		padding-left: 0;
+	}
+	.hp-about-section {
+    padding-top: 25px;
+	}
+	.fp-more-informations span {
+    padding: 0 5px;
+	}
+	ul#slide_out_nav > li > a {
+    font-size: 26px;
+	}
+	.slide-out-lower {
+    max-width: 100%;
+	}
+	.slide-out-logo {
+    padding-left: 0;
+	}
+	.git-form-text {
+    font-size: 15px;
+	}
+	.section-title {
+		font-size: 40px;
+	}
+	.fp-more-informations {
+    margin: 0 -5px;
+	}
+	.fp-more-informations span {
+    font-size: 9px;
+	}
+	.fp-view-details {
+    font-size: 14px;
+	}
+	.member-box {
+    padding-bottom: 115px;
+	}
+	.testi-title-container {
+    padding: 50px 30px 0;
+	}
+	.section-title .small-text {
+    letter-spacing: 0.3em;
+    font-size: 17px;
+	}
+	.section-title .section-number::after {
+    height: 27px;
+	}
+	.footernav li {
+    padding: 6px 8px;
+	}	
+	.footernav li a {
+    font-size: 14px;
+	}	
+} 
+
+@media only screen and (max-width: 1100px) {
+	.max-container, .container {
+    width: 900px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.max-container,
+	.container {
+    width: 830px;
+	}
+}
+
+/* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
+@media only screen and (max-width: 991px) {
+
+	.ip-featured-communities-area .fc-col1 .fc-list, 
+	.ip-featured-communities-area .fc-col3 .fc-list, 
+	.ip-featured-communities-area .fc-col3 {
+		width: 100% !important;
+	}
+	
+	.site-header,
+	.slideout-wrapper,
+	#sections-navigation{
+		display: none !important;
+	}
+	.header-mobile-logo{
+		display: block;
+	}
+	.qs-title,
+	.qs-form {
+    width: 100%;
+    text-align: center;
+	}
+	.qs-fields {
+    width: 100%;
+    padding: 0;
+	}
+	.qs-action {
+    display: block;
+    margin: 0 auto;
+	}
+	.qs-field-collumn.quarter {
+    width: 50%;
+	}
+	.lgs-col {
+    width: 100%;
+	}
+	.cta-button-box {
+    margin-left: auto;
+    margin-right: auto;
+	}
+	.lgs-content-wrapper {
+    padding: 45px 40px;
+	}
+	.lgs-col-right{
+		padding: 15px;
+	}
+	.testi-col.testi-left {
+    width: 100%;
+    padding-top: 50%;
+	}
+	.testi-right{
+		width: 100%;
+	}
+	.testi-slider-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 33px 52px 33px;
+	}
+	.slide-arrow-prev {
+    left: 20px;
+	}
+	.slide-arrow-next {
+    right: 20px;
+	}
+	.member-box {
+    max-width: 390px;
+    margin: 0 auto;
+    padding-bottom: 119px;
+	}	
+	.about-image {
+    margin-left: 0;
+    padding-left: 0;
+	}
+	/* The following are used on inner pages. Please edit carefully. */
+
+	.inner {
+	    width: 100%;
+	}
+	#content-sidebar, #content-full {
+	    width: 100%;
+	}	
+	.outer{
+		width: 100%;
+		min-width: 100%;
+	}
+	#content-sidebar #content{
+		width: 100%;
+	}
+	
+	#content iframe {
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	.testi-action-section {
+	    margin-top: 0;
+	}
+
+	.testi-button {
+	    padding: 20px 35px;
+	}
+} 
+@media only screen and (max-width: 860px) {
+	.max-container, .container {
+    width: 100%;
+	}
+}
+/* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
+@media only screen and (max-width: 767px) {
+	
+    .ip-banner .container{
+        width: 100%;
+    }
+		.git-form-box::before, .git-form-box::after{
+			top: 15px;
+			height: calc(100% - 43px);
+		}
+		.section-title .section-number::after {
+			height: 18px;
+		}
+		
+		.section-title .small-text {
+			font-size: 12px;
+		}
+		.hp-cta-section {
+			padding: 30px 0;
+		}
+		.hp-meet-the-team-section {
+			padding-bottom: 60px;
+		}
+		.slide-arrow{
+			top: 40%;
+		}
+}
+
+/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
+@media only screen and (max-width: 480px) {
+	.git-form-box{
+		padding: 0 15px;
+	}
+	.qs-row {
+    padding: 30px 20px;
+	}
+	.cta-button-text .small-text{
+		font-size: 12px;
+    letter-spacing: 0.3em;
+	}
+	.cta-button-text .big-text{
+		font-size: 30px;
+	}
+	.cta-button-box:hover .cta-button-text .small-text {
+    font-size: 15px;
+	}	
+	.cta-button-box:hover .cta-button-text .big-text {
+    font-size: 40px;
+	}
+	.cta-button-text {
+    padding-left: 20px;
+	}
+	.cta-button-text::before{
+		width: 15px;
+	}
+	.cta-button-box:hover .cta-button-text {
+    padding-left: 25px;
+	}
+	.cta-button-box:hover .cta-button-text::before {
+    width: 19px;
+	}
+	.cta-button-inner {
+    min-height: 111px;
+	}
+	.feed-username {
+    font-size: 9.36px;
+	}
+	.feed-section-title .follow-text {
+    font-size: 15.5px;
+	}
+	.feed-section-title .divider {
+    margin: 13px auto 15px;
+	}
+	.submit-form {
+    padding: 0;
+		margin-top: 30px;
+	}
+	.git-form-box::before, .git-form-box::after,
+	.git-form-text::before, .git-form-text::after,
+	.submit-form::before, .submit-form::after{
+		display: none;
+	}
+	.git-form {
+    padding-top: 25px;
+	}
+	.testi-title-container {
+    padding: 45px 20px 20px;
+	}
+	.section-title {
+		margin-bottom: 25px;
+    font-size: 30px;
+		padding-left: 27px;
+	}
+	.section-title .small-text {
+    font-size: 11px;
+    letter-spacing: 2px;
+	}
+	.section-title .section-number {
+    font-size: 11px;
+	}
+	.testi-slider-wrapper {
+    padding: 33px 20px 33px;
+	}
+	.testi-button {
+		padding: 35px 20px;
+	}
+	.footer .social-media-list li {
+    padding: 0 5px;
+	}
+	.footernav li {
+    display: block;
+	}
+	.fp-info-row::before{
+		display: none;
+	}
+	.fp-informations {
+    padding: 0 10px;
+	}	
+	.fp-info-row {
+    padding: 20px 8px;
+		min-height: 110px;
+	}
+	.fp-address-1, .fp-price {
+    font-size: 14px;
+		letter-spacing: 0.05em;
+	}
+	.fp-address-2 {
+    font-size: 11px;
+	}
+	.fp-view-details {
+    font-size: 11px;
+		letter-spacing: 0.05em;
+	}
+	.feed-section-title .follow-text {
+    font-size: 13px;
+	}
+	.feed-section-title .feed-title {
+    font-size: 20px;
+	}
+}
+ 
